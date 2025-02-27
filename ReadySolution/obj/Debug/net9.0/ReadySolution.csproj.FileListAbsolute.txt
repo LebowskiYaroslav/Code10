@@ -1,0 +1,14 @@
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\obj\Debug\net9.0\ReadySolution.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\obj\Debug\net9.0\ReadySolution.AssemblyInfoInputs.cache
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\obj\Debug\net9.0\ReadySolution.AssemblyInfo.cs
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\obj\Debug\net9.0\ReadySolution.csproj.CoreCompileInputs.cache
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\bin\Debug\net9.0\ReadySolution.exe
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\bin\Debug\net9.0\ReadySolution.deps.json
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\bin\Debug\net9.0\ReadySolution.runtimeconfig.json
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\bin\Debug\net9.0\ReadySolution.dll
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\bin\Debug\net9.0\ReadySolution.pdb
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\obj\Debug\net9.0\ReadySolution.dll
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\obj\Debug\net9.0\refint\ReadySolution.dll
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\obj\Debug\net9.0\ReadySolution.pdb
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\obj\Debug\net9.0\ReadySolution.genruntimeconfig.cache
+C:\Users\Семья\Desktop\test\Lesson1\ReadySolution\obj\Debug\net9.0\ref\ReadySolution.dll
