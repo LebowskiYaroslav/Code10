@@ -5,37 +5,26 @@ class CSProject
 {
     static void Main(String[] args)
     {
-        // string shoppingListItem_1 = "Хлеб";
-        // string shoppingListItem_2 = "";
-        
-        // string[] shoppingList = { "bread", "milk", "cola" };
-        
-        // System.Console.WriteLine(shoppingList.Length);
-
-        // for (int i = 0; i < 5; i++)
-        // {
-        //     System.Console.WriteLine(i);
-        // }
-
-        // A 1.
-        int[] array = new int[5];
-
-        // A 2.
-        string[] array_str = { "1", "2", "3",};
-
-        // B 3.
-        int[] array_int = { 1, 2, 3, 4, 5 };
-        // System.Console.WriteLine(array_int[1]);
-        array_int[2] = 100;
-        // System.Console.WriteLine(array_int[2]);
-
-        // B 4.
-        System.Console.WriteLine(array_int.Length);
-
-        // C 5.
-        float[] array_float = new float[4];
-
-        // System.Console.WriteLine(array_float[3]);
-
+    // А
+    int[] array = new int[5];
+    // А2
+    string[] array_str = {"bebebe", "babba", "Mbappe"};
+    // Б
+    int[] array_int = {1, 2, 3, 4, 5};
+    Console.Writeline(array_int[1]);
+    array_int[2] = 100;
+    Console.Writeline(array_int[2]);
+    Console.Writeline(array_int.Length);
+    //С
+    float[] array_float = new float[4];
+    //с2
+    int[] array_3 = {1, 2, 3};
+    //с3
+    string[] array_3_str = new string[5];
+    array_3_str[0] = 'qwerty0';
+    array_3_str[1] = 'qwerty1';
+    array_3_str[2] = 'qwerty2';
+    array_3_str[3] = 'qwerty3';
+    array_3_str[4] = 'qwerty4';
     }
 }
