@@ -104,7 +104,39 @@ class Program
                 break;
             }
         }
+        // нвоый урок практики с Иваном практика 1 сумма элементов массива
+        /*int[] numbers = {1, 2, 3, 4, 5};
+        int result = 0;
+        foreach(int num in numbers){
+            result += num;
+        }
+        Console.WriteLine(result);*/
+        // поиск макс элемента 2
+        /*int[] numbers = {1, 2, 3, 4, 5};
+        Array.Sort(numbers);
+        Array.Reverse(numbers);
+        Console.WriteLine(numbers[0]);*/
+        //практика 3
+        /*int[] numbers = {1, 2, 3, 4, 5};
+        Array.Reverse(numbers);
+        Console.WriteLine(numbers[0]);*/
+        // практика 4
+        /*int[] numbers = {1, 2, 3, 4, 5};
+        foreach(int num in numbers){
+            if(num % 2 == 0){
+                Console.WriteLine(num);
+            }
 
+        }*/
+        //практика 5
+        /*int[] numbers = {-1, -2, 3, -4, 5};
+        foreach(int num in numbers){
+            if(num < 0){
+                Console.WriteLine(num);
+            }
+        }*/
+        // практика 6
+        
 
     }
 }
