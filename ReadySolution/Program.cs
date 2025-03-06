@@ -79,6 +79,31 @@ class Program
         string names = Console.ReadLine();
         Console.WriteLine($"Записанное имя, {names}");
         Console.WriteLine($"Записанный номер, {nomer}");
+        
+        //дз 1
+        Console.WriteLine("Введите перовое число:");
+        int number_one = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите второе число:");
+        int number_two = Convert.ToInt32(Console.ReadLine());
+        int summ = number_one + number_two;
+        Console.WriteLine($"Сумма чисел: {summ}");
+        //дз2
+        Random random = new Random();
+        int number_random = random.Next(0, 10);
+        Console.WriteLine("Введите число:");
+        int number_users = 0;
+        while(number_random != number_users){
+            number_users = Convert.ToInt32(Console.ReadLine());
+            if(number_users < number_random){
+                Console.WriteLine("Ваше чисвло меньше загаданного");
+            } else if(number_users > number_random){
+                Console.WriteLine("Ваше число больше загаданного");
+            } 
+            else {
+                Console.WriteLine("Ура вы отгдали число!!!!");
+                break;
+            }
+        }
 
 
     }
