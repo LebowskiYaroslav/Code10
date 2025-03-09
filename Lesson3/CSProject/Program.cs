@@ -77,8 +77,40 @@ class CSProject
         /*int[] numbers = {1, 2, 3, 3, 3, 3, 4, 5,};
         var most = numbers.GroupBy(x => x).OrderByDescending(x => x.Count()).First();
         Console.WriteLine("Наиболее часто встречается {0} в количестве {1}", most.Key, most.Count());*/
-
         
 
+        //ДОМАШНЯЯ РАБОТА 1
+        int[] mass1 = {1, 2, 3, 4, 5};
+        int[] mass2 = {6, 7, 8, 9, 10};
+        int length1 = mass1.Length;
+        int length2 = mass2.Length;
+        int[] result = new int[length1 + length2];
+        for (int i = 0; i < length1; i++)
+        {
+            result[i] = mass1[i];
+        }
+        for (int i = 0; i < length2; i++)
+        {
+            result[length1 + i] = mass2[i];
+        }
+        foreach(int num in result){
+            Console.WriteLine(num);
+        }
+        //2
+        int[] arr = {1, 2, 3, 4, 5};
+        int n = arr.Length;
+        int[] result1 = new int[n];
+        n -= 1;
+        int rotation = 2;
+        for(int i = 0; i < rotation; i++){
+            result1[i] = arr[(n - 1) + i];
+        }
+        for(int i = 0; i <= rotation; i++){
+            result1[i + rotation] = arr[i];
+        }
+        foreach(int num in result1){
+            Console.WriteLine(num);
+        }
+        
     }
 }
