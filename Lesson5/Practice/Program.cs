@@ -14,6 +14,13 @@ class Person{
             Person.age = age;
         }
     }
+    public Person(string name int age){
+        Name = name;
+        Age = age;
+    }
+string[] person = new Person[2];
+person.name = "yarik";
+person.age = 10;
 
 }
 class Programm{
@@ -21,6 +28,15 @@ class Programm{
         Person person = new Person();
         person.name = "Yarik";
         person.age = 52;
+        string[] person = new Person[2];
+        person.name = "yarik";
+        person.age = 10;
+        public void Introduce(){
+            Console.WriteLine($"Привет мое имя {name}");
+        }
+        public void Introduce(){
+            Console.WriteLine($"Привет мой возраст {age}");
+        }
 
         System.Console.WriteLine(person.name);
         System.Console.WriteLine(person.age);
