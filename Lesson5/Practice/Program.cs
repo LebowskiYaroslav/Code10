@@ -1,6 +1,6 @@
 ﻿using System;
 //ПРАКТИКА А Б
-class Person{
+/*class Person{
     public string name;
     public int age;
     public void Introduce(){
@@ -14,14 +14,10 @@ class Person{
             Person.age = age;
         }
     }
-    public Person(string name int age){
+    public Person(string name, int age){
         Name = name;
         Age = age;
     }
-string[] person = new Person[2];
-person.name = "yarik";
-person.age = 10;
-
 }
 class Programm{
     static void Main(string[] args){
@@ -47,4 +43,33 @@ class Programm{
 }
 class Employee:Person{
     public string position;
+}*/
+int[] numbers = {1, 2, 3, 3, 3, 3, 4, 5};
+int result = Homework.moda(numbers);
+Console.WriteLine(result);
+class Homework{
+    public static int moda(int[] numbers){
+        var most = numbers.GroupBy(x => x).OrderByDescending(x => x.Count()).First();
+        return most.Count();
+
+    }
+    public static int[,] TransposeMatrix(int[,] matrix)
+    {
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
+        
+        int[,] result = new int[cols, rows];
+        
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                result[j, i] = matrix[i, j];
+            }
+        }
+        
+        return result;
+    }
 }
+
+

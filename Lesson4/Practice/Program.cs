@@ -135,6 +135,29 @@ class CSProject
         }
         string b = "ротор";
         Console.WriteLine(pal(b));*/
+        //ДОМАШНЯЯ РАБОТА ДОМАШНЯЯ РАБОТА ДОМАШНЯЯ РАБОТА ДОМАШНЯЯ РАБОТА ДОМАШНЯЯ РАБОТА ДОМАШНЯЯ РАБОТА ДОМАШНЯЯ РАБОТА ДОМАШНЯЯ РАБОТА ДОМАШНЯЯ РАБОТА 
+        // БАЗОВАЯ
+        /*static string loan_approval(int balance){
+            if(balance <= 0){
+                return "Кредит одобрен!":
+            }
+            else{
+                return "У вас достаточно средств, кредит не нужен.";
+            }
+        }*/
+        /*static int deposit_withdrawal(int deposit int balance){
+            return balance - deposit;
+        }*/
+        //ПРОДВИНУТАЯ
+        /*static float calculate_compound_interest(float summ, float procent, float age){
+            float konec_summ = 0;
+            for(int i = 0; i < age; i++){
+                konec_summ = summ + ((summ/100) * (procent * age));
+            }
+            return konec_summ;
+        }
+        Console.WriteLine(calculate_compound_interest(1058, 93, 4));*/
+
 
     }
 }
