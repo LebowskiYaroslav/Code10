@@ -43,11 +43,56 @@ public class Employee : Person
 
 public class PersonFileService
 {
-    
+    public person ReadPeopleFromFile(){
+        const string person = "persons.txt"
+        
+        string[] lines = File.ReadAllLines("persons.txt");
+
+        var people = new list<Person>();
+        for(int i = 0; i < persons.Length; i++){
+            people.Add(new Person(person[i], Convert.ToInt32(persons[i + 1])))
+        }
+        Person[] array = people.ToArray();
+        return array;
+    }
+    public void WritePeopleToFile(Person[] people){
+        string path = "persons.txt";
+        for(int i = 0; i < persons.Length; i++){
+            File.WriteAllText(path, array[i], array[i + 1]);
+            Console.WriteLine("Файл записан!");
+        }
+        //записывает в файл
+    }
 }
 
 public class Program
-{
+{ 
+    // A
+    static void readAndWrite(){
+        string path = "Test.txt";
+        string content = "ЭТО ЗАПИСЬ";
+        File.WriteAllText(path, content);
+        Console.WriteLine("Файл записан!");
+
+        string text = File.ReadAllText("Test.txt");
+        Console.WriteLine(text);
+    }
+    // С
+    static void MD(string[] path)
+    {
+        string path = "File.MD";
+        string content1 = "## Заголовок второго уровня";
+        string content2 = "";
+        string content3 = "Это пример текста в Markdown.";
+        string content4 = "";
+        string content5  = "* Это пример маркированного текста";
+        string content6  = "### Заголовок третьего уровня";
+        string content7  = "**Жирный текст** и *курсив*";
+        string content8  = "![Альтернативный текст](путь_к_изображению)";
+        string content9  = "[Текст ссылки](https://....)";
+        File.WriteAllText(path, content1, content2, content3, content4, content5, content6, content7, content8, content9);
+        path.Save("output.md", SaveFormat.Markdown);
+    }
     public static void Main()
     {
         // Список людей для чтения и записи в файл
@@ -68,6 +113,7 @@ public class Program
         {
             person.Introduce();
         }
+
     }
 }
 
@@ -93,7 +139,7 @@ public class Program
 // |            age: int,            |
 // |            position: string)    |
 // +---------------------------------+
-// Для практики B и C необходимо добавить PersonFileService
+// Для практики B необходимо добавить PersonFileService
 //
 //
 // +---------------------------------+
