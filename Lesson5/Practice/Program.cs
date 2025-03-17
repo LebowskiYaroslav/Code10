@@ -1,4 +1,5 @@
 ﻿using System;
+<<<<<<< HEAD
 //ПРАКТИКА А Б
 /*class Person{
     public string name;
@@ -36,10 +37,32 @@ class Programm{
         for(int i = 0; i < 2; i++){
             array[i].Introduce();
         }
+=======
+
+class Person
+{
+    public string name;
+    public int age;
+
+    public void Introduce()
+    {
+        System.Console.WriteLine($"Привет, мое имя {name}");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Person person = new Person();
+        person.name = "Ivan";
+        person.age = 50;
+>>>>>>> upstream/main
 
         System.Console.WriteLine(person.name);
         System.Console.WriteLine(person.age);
     }
+<<<<<<< HEAD
 }
 class Employee:Person{
     public string position;
@@ -73,3 +96,6 @@ class Homework{
 }
 
 
+=======
+}
+>>>>>>> upstream/main
