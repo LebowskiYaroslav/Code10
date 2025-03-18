@@ -58,7 +58,7 @@ public class PersonFileService
     public void WritePeopleToFile(Person[] people){
         string path = "persons.txt";
         for(int i = 0; i < persons.Length; i++){
-            File.WriteAllText(path, array[i], array[i + 1]);
+            File.AppendAllText(path, array[i], array[i + 1]);
             Console.WriteLine("Файл записан!");
         }
         //записывает в файл
