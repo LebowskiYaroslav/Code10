@@ -16,12 +16,20 @@ public class Student
 
     public void AddGrade()
     {
-        Console.Write("Vvedite predmet: ");
+        Console.Write("Vvedite predmet (ili 'exit' dlya vyhoda): ");
         string subject = Console.ReadLine();
+        if (subject.ToLower() == "exit"){
+            break;
+        }
 
         Console.Write("Vvedite ocenku: ");
         if (int.TryParse(Console.ReadLine(), out int grade))
         {
+            if (Grades.ContainsKey(subject))
+            {
+                Console.WriteLine($"Ocenka po predmetu '{subject}' uje est'. Zamenit' (y/n)?");
+                if (Console.ReadLine().ToLower() != "y") continue;
+            }
             Grades[subject] = grade;
             Console.WriteLine($"Ocenka {grade} po predmetu '{subject}' dobavlena.");
         }
@@ -128,14 +136,14 @@ class SimpleDB
 
     public void SaveDB()
     {
-        Console.WriteLine("Funcional ne realizovan...");
-        //  1 B;
+        fileService.SaveToFile();
+        Console.WriteLine("Baza dannyx sohranena.");
     }
 
     public void LoadDB()
     {
-        Console.WriteLine("Funcional ne realizovan...");
-        //  practice B;
+        fileService.LoadFromFile()    
+        Console.WriteLine("Baza dannyx sagrujena.");
     }
     public void AddStudent(string name)
     {
