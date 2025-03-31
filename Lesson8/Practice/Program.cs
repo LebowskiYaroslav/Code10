@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿﻿﻿﻿using System;
 using System.Collections.Generic;
 
 // Идея игры:
@@ -41,11 +41,14 @@ public class Game
         monsters = new List<Monster>
         {
             new Monster("Goblin", 30, 5),
-            new Monster("Orc", 50, 10)
+            new Monster("Orc", 50, 10),
+            new Monster("Meganite", 80, 20),
+            new Monster("Sablezub", 15, 7)
         };
         inventory = new List<Item>
         {
-            new HealingPotion("Small Healing Potion", "Heals 20 health points", 20)
+            new HealingPotion("Small Healing Potion", "Heals 20 health points", 20),
+            new HealingPotion("Large Healing Potion", "Heals 50 health points", 50)
         };
     }
 
@@ -119,13 +122,16 @@ class Item {
 }
 
 class HealingPotion : Item {
-        public HealingPotion(string name, string description) : base(name, description) {
-            }
-            public override void Use() {
-                base.Use();
-                System.Console.WriteLine($"You healed for 10 health");
-            }
+        private int healingAmount;
 
+    private HealingPotion(string name, string description, int healingAmount) : base(name, description) {
+        this.healingAmount = healingAmount;
+    }
+    public override void Use(Hero hero) {
+        base.Use(hero);
+        hero.Health += healingAmount;
+        Console.WriteLine($"You healed for {healingAmount} health. Current health: {hero.Health}");
+    }
 }
 
 public class Program
@@ -135,4 +141,4 @@ public class Program
         Game game = new Game();
         game.Play();
     }
-}
+}       
