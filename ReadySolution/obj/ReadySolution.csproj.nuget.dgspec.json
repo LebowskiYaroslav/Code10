@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Семья\\Desktop\\важное бэкенд\\Code10\\ReadySolution\\ReadySolution.csproj": {}
+    "C:\\Users\\Семья\\Desktop\\учеба\\важное бэкенд\\Code10\\ReadySolution\\ReadySolution.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Семья\\Desktop\\важное бэкенд\\Code10\\ReadySolution\\ReadySolution.csproj": {
+    "C:\\Users\\Семья\\Desktop\\учеба\\важное бэкенд\\Code10\\ReadySolution\\ReadySolution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Семья\\Desktop\\важное бэкенд\\Code10\\ReadySolution\\ReadySolution.csproj",
+        "projectUniqueName": "C:\\Users\\Семья\\Desktop\\учеба\\важное бэкенд\\Code10\\ReadySolution\\ReadySolution.csproj",
         "projectName": "ReadySolution",
-        "projectPath": "C:\\Users\\Семья\\Desktop\\важное бэкенд\\Code10\\ReadySolution\\ReadySolution.csproj",
+        "projectPath": "C:\\Users\\Семья\\Desktop\\учеба\\важное бэкенд\\Code10\\ReadySolution\\ReadySolution.csproj",
         "packagesPath": "C:\\Users\\Семья\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Семья\\Desktop\\важное бэкенд\\Code10\\ReadySolution\\obj\\",
+        "outputPath": "C:\\Users\\Семья\\Desktop\\учеба\\важное бэкенд\\Code10\\ReadySolution\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Семья\\AppData\\Roaming\\NuGet\\NuGet.Config"
