@@ -122,7 +122,7 @@ class Item {
 }
 
 class HealingPotion : Item {
-        private int healingAmount;
+    private int healingAmount;
 
     private HealingPotion(string name, string description, int healingAmount) : base(name, description) {
         this.healingAmount = healingAmount;
