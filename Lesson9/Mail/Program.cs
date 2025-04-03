@@ -94,7 +94,7 @@ public class Mail
     
     public void SortByRecived_Linq()
     {
-        
+        Letters = Letters.OrderBy(letter => letter.Received).ToList();
     }
 }
 
