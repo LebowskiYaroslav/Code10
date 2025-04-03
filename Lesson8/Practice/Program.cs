@@ -1,5 +1,6 @@
 ﻿﻿﻿﻿﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 
 // Идея игры:
 // Игрок управляет героем, который может сражаться с монстрами и собирать сокровища.
@@ -14,6 +15,7 @@ using System.Collections.Generic;
 // Game - класс, управляющий игрой. Содержит героя, список монстров и инвентарь предметов. Метод Play запускает игру, где герой сражается с монстрами и использует предметы.
 // Program - основной класс, запускающий игру.
 
+<<<<<<< HEAD
 abstract class Creature {
     public string Name {get; set;}
     public int Health {get; set;}   
@@ -25,15 +27,86 @@ abstract class Creature {
     public virtual void TakeDamage(int damage) {
         Health -= damage;
         if(Health < 0){
+=======
+abstract class Creature
+{
+    public string Name { get; set; }
+    public int Health { get; set; }
+
+    public Creature(string name, int health)
+    {
+        Name = name;
+        Health = health;
+    }
+
+    public abstract void Attack(Creature target);
+    public virtual void TakeDamage(int damage) 
+    {
+        Health -= damage;
+        if (Health < 0)
+        {
+>>>>>>> upstream/main
             Health = 0;
         }
     }
 }
+<<<<<<< HEAD
 public class Game
 {
     private Hero hero;
     private List<Monster> monsters;
     private List<Item> inventory;
+=======
+
+class Hero : Creature
+{
+    public int AttackPower { get; set; }
+    public Hero(string name, int health, int attackPower) : base(name, health)
+    {
+        AttackPower = attackPower;
+    }
+
+    public override void Attack(Creature target)
+    {
+        target.TakeDamage(AttackPower);
+        System.Console.WriteLine($"{Name} attacks {target.Name} for {AttackPower} damage");
+    }
+}
+
+class Monster : Creature
+{
+    public int AttackPower { get; set; }
+
+    public Monster(string name, int health, int attackPower) : base(name, health)
+    {
+        AttackPower = attackPower;
+    }
+
+    public override void Attack(Creature target)
+    {
+        target.TakeDamage(AttackPower);
+        System.Console.WriteLine($"{Name} attacks {target.Name} for {AttackPower} damage");
+    }
+}
+
+class Item
+{
+    public string Name { get; set; }
+    public string Description { get; set; }
+
+    public Item(string name, string description)
+    {
+        Name = name;
+        Description = description;
+    }
+
+    public virtual void Use(Hero player)
+    {
+        // Практика B 3.
+    }
+}
+
+>>>>>>> upstream/main
 
     public Game()
     {
