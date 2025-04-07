@@ -70,10 +70,22 @@ public class Mail
     
     public List<int> GetNewLetterIds_Linq()
     {
+<<<<<<< HEAD
         return Letters
         .Where(letter => letter.IsNew)
         .Select(letter => letter.Id)
         .ToList();
+=======
+        // TODO: Задание B1. напишите здесь linq запрос
+        var res = Letters.Where(letter => letter.IsNew == true).Select(letter => letter.Id).ToList();
+        
+        // var res = from letter in Letters
+        //           where letter.IsNew == true
+        //           select letter.Id;
+
+        return res;//.ToList();
+        // throw new NotImplementedException(); // заглушка, надо убрать
+>>>>>>> upstream/main
     }
     
     public void SortByRecived_Classic()
@@ -148,10 +160,10 @@ public class Program
 
 
 
-        foreach (var email in Mails)
-        {
-            email.CreateRandomLetters(10);
-        }
+        // foreach (var email in Mails)
+        // {
+        //     email.CreateRandomLetters(10);
+        // }
         
         var oldLettersUser1 = Mails
             .Where(m => m.Email == "user1@mail.com")
