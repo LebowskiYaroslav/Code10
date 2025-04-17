@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 public delegate int StringComparison(string str1, string str2);
@@ -116,6 +116,24 @@ class Program
         foreach (string testString in SortStrings(del, test))
         {
             Console.WriteLine(testString);
+        }
+
+        // Practice C: Testing BankAccount
+        BankAccount account = new BankAccount(1000);
+        account.BalanceChanged += (oldBalance, newBalance) =>
+        {
+            Console.WriteLine($"Balance changed from {oldBalance} to {newBalance}");
+        };
+
+        account.Deposit(500);
+        account.Withdraw(200);
+        try
+        {
+            account.Withdraw(1300); // This will throw an exception
+        }
+        catch (InvalidOperationException ex)
+        {
+            Console.WriteLine(ex.Message);
         }
     }
 }
