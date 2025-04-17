@@ -124,8 +124,7 @@ namespace FileManager
                     default:
                         Console.WriteLine($"Unknown command: {parts[0]}");
                         break;
-                }
-            }
+                }}
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
@@ -202,16 +201,16 @@ namespace FileManager
 
         static void ShowHelp()
         {
-            Console.WriteLine("\nAvailable commands:");
-            Console.WriteLine("ls [page] - List directory contents (paginated)");
-            Console.WriteLine("cd [path] - Change directory");
-            Console.WriteLine("cp [source] [dest] - Copy file/directory");
-            Console.WriteLine("rm [path] - Delete file/directory");
-            Console.WriteLine("info [path] - Show file/directory info");
-            Console.WriteLine("exit - Exit the program");
-            Console.WriteLine("help - Show this help");
-            Console.WriteLine("\nUse ↑/↓ arrow keys to navigate command history");
-            Console.WriteLine($"Current page size: {_config.PageSize} items\n");
+            Console.WriteLine("\nДоступные команды:");
+            Console.WriteLine("ls [page] - Список содержимого каталога (с разбивкой по страницам)");
+            Console.WriteLine("cd [path] - Изменить каталог");
+            Console.WriteLine("cp [source] [dest] - Скопировать файл/каталог");
+            Console.WriteLine("rm [path] - удалить файл/каталог");
+            Console.WriteLine("info [path] - Показывать информацию о файле/каталоге");
+            Console.WriteLine("exit - Выйдите из программы");
+            Console.WriteLine("help - Покажите эту справку");
+            Console.WriteLine("\nИспользуйте клавиши со стрелками ↑/↓ для навигации по истории команд");
+            Console.WriteLine($"Текущий размер страницы: {_config.PageSize} предметы\n");
         }
 
         static void LogError(Exception ex)
